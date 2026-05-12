@@ -24,7 +24,7 @@
 
 /* ── Reset ──────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: var(--font-body);
@@ -425,11 +425,11 @@ body {
 .countdown-grid {
   display: inline-flex;
   align-items: center;
-  gap: .55rem;
+  gap: .4rem;
 }
 
 .countdown-box {
-  width: 96px;
+  width: 68px;
   flex-shrink: 0;
   background: rgba(30, 144, 255, .04);
   border: 1px solid var(--border);
@@ -1250,6 +1250,11 @@ body {
 /* ══════════════════════════════════════════════════════
    DESKTOP 600px+
    ══════════════════════════════════════════════════════ */
+@media (min-width: 500px) {
+  .countdown-grid { gap: .55rem; }
+  .countdown-box  { width: 84px; }
+}
+
 @media (min-width: 600px) {
   :root { --max: 540px; }
   .galeria-grid { gap: 8px; padding: 0 1.2rem; }
