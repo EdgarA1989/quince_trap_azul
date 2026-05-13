@@ -56,6 +56,27 @@
       </div>
     </section>
 
+    <!-- ── MÚSICA ── -->
+    <section id="musica" class="section musica-section reveal">
+      <p class="section-tag">// el track</p>
+      <div class="musica-player">
+        <button class="musica-btn" id="musica-btn" aria-label="Reproducir">
+          <svg class="icon-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+        </button>
+        <div class="musica-info">
+          <p class="musica-titulo" id="musica-titulo">La canción</p>
+          <p class="musica-artista" id="musica-artista">Artista</p>
+        </div>
+      </div>
+      <div class="eq-orb" id="eq-bars" aria-hidden="true">
+        <div class="eq-bars-inner">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <audio id="audio" loop preload="none"></audio>
+    </section>
+
     <!-- ── COUNTDOWN ── -->
     <section id="countdown" class="countdown-section">
       <p class="section-tag reveal">// cuenta regresiva</p>
@@ -181,27 +202,6 @@
         <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">✕</button>
         <img class="lightbox-img" id="lightbox-img" alt="Foto ampliada" />
       </div>
-    </section>
-
-    <!-- ── MÚSICA ── -->
-    <section id="musica" class="section musica-section reveal">
-      <p class="section-tag">// el track</p>
-      <div class="musica-player">
-        <button class="musica-btn" id="musica-btn" aria-label="Reproducir">
-          <svg class="icon-play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
-          <svg class="icon-pause" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="display:none"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
-        </button>
-        <div class="musica-info">
-          <p class="musica-titulo" id="musica-titulo">La canción</p>
-          <p class="musica-artista" id="musica-artista">Artista</p>
-        </div>
-      </div>
-      <div class="eq-orb" id="eq-bars" aria-hidden="true">
-        <div class="eq-bars-inner">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-      </div>
-      <audio id="audio" loop preload="none"></audio>
     </section>
 
     <!-- ── CONFIRMACIÓN ── -->
