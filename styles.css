@@ -1121,6 +1121,7 @@ body {
   color: var(--accent);
   box-shadow: 0 0 12px rgba(30, 144, 255, .2);
 }
+.btn-agendar--solo { width: 100%; justify-content: center; }
 
 /* ══════════════════════════════════════════════════════
    FOOTER
